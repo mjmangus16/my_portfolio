@@ -133,6 +133,11 @@ html {
   font-size: 62.5%;
   min-height: 100%;
 }
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 html,
 body {
   font-family: "Raleway", sans-serif;
@@ -222,6 +227,11 @@ p {
   padding-top: 9rem;
   background-color: #4c5c96;
 }
+@media (max-width: 800px) {
+  .slantedDiv {
+    height: auto;
+  }
+}
 .slantedDiv .innerContent-container {
   width: 90%;
   max-width: 1000px;
@@ -234,6 +244,15 @@ p {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .slantedDiv .innerContent-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .slantedDiv .innerContent-container .innerContent {
   width: 70%;
   display: inline-block;
@@ -242,6 +261,17 @@ p {
   color: white;
   z-index: 10;
   letter-spacing: 2px;
+}
+@media (max-width: 800px) {
+  .slantedDiv .innerContent-container .innerContent {
+    width: 100%;
+    order: 2;
+  }
+}
+@media (max-width: 600px) {
+  .slantedDiv .innerContent-container .innerContent {
+    padding: 10px;
+  }
 }
 .slantedDiv .innerContent-container .innerContent h4 {
   padding: 15px 0px;
@@ -273,6 +303,18 @@ p {
   z-index: 10;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 800px) {
+  .slantedDiv .innerContent-container img {
+    order: 1;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .slantedDiv .innerContent-container img {
+    width: 75%;
+  }
+}
 .slantedDiv .innerContent-container img:hover {
   transform: scale(1.025);
   box-shadow: 2px 2px 15px;
@@ -298,10 +340,20 @@ p {
   background-color: #45558d;
   z-index: 6;
 }
+@media (max-width: 800px) {
+  .slantedDivC {
+    height: auto;
+  }
+}
 .slantedDivC .innerContent-container .innerContent {
   text-align: left;
   padding-left: 75px;
   padding-right: 0px;
+}
+@media (max-width: 600px) {
+  .slantedDivC .innerContent-container .innerContent {
+    padding: 10px;
+  }
 }
 .slantedDivC .innerContent-container .innerContent .innerContent-links {
   align-items: flex-start;
@@ -326,6 +378,11 @@ p {
   height: 450px;
   background-color: #3f4e85;
   z-index: 4;
+}
+@media (max-width: 800px) {
+  .slantedDivD {
+    height: auto;
+  }
 }
 .slantedDivD:after {
   position: absolute;
@@ -354,6 +411,11 @@ p {
 .slantedDivE .innerContent-container img {
   width: 300px;
   margin: 3rem auto;
+}
+@media (max-width: 800px) {
+  .slantedDivE .innerContent-container img {
+    width: 75%;
+  }
 }
 .slantedDivE .innerContent-container .img-mobile {
   box-shadow: none;

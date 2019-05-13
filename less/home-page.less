@@ -55,14 +55,21 @@
   padding-top: 9rem;
   background-color: #4c5c96;
 
+  @media @tablet {
+    height: auto;
+  }
+
   .innerContent-container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
     height: 100%;
     z-index: 8;
-
     .flexProperties(space-between, row, wrap, center);
+
+    @media @tablet {
+      .flexProperties(space-between, column, nowrap, center);
+    }
 
     .innerContent {
       width: 70%;
@@ -71,8 +78,16 @@
       padding-right: 75px;
       color: @textColor;
       z-index: 10;
-
       letter-spacing: 2px;
+
+      @media @tablet {
+        width: 100%;
+        order: 2;
+      }
+
+      @media @mobile {
+        padding: 10px;
+      }
 
       h4 {
         padding: 15px 0px;
@@ -105,6 +120,16 @@
       z-index: 10;
       transition: all 0.3s ease-in-out;
 
+      @media @tablet {
+        order: 1;
+        width: 50%;
+        margin-bottom: 3rem;
+      }
+
+      @media @mobile {
+        width: 75%;
+      }
+
       &:hover {
         transform: scale(1.025);
         box-shadow: 2px 2px 15px;
@@ -135,11 +160,19 @@
   background-color: #45558d;
   z-index: 6;
 
+  @media @tablet {
+    height: auto;
+  }
+
   .innerContent-container {
     .innerContent {
       text-align: left;
       padding-left: 75px;
       padding-right: 0px;
+
+      @media @mobile {
+        padding: 10px;
+      }
 
       .innerContent-links {
         align-items: flex-start;
@@ -169,6 +202,10 @@
   height: 450px;
   background-color: #3f4e85;
   z-index: 4;
+
+  @media @tablet {
+    height: auto;
+  }
 }
 
 .slantedDivD:after {
@@ -198,6 +235,12 @@
     img {
       width: 300px;
       margin: 3rem auto;
+    }
+
+    img {
+      @media @tablet {
+        width: 75%;
+      }
     }
 
     .img-mobile {
