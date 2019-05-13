@@ -268,6 +268,39 @@
   transform: skewY(-4deg);
 }
 
+.slantedDivF {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #3f4e85;
+  z-index: 1;
+
+  .innerContent-container {
+    z-index: 10;
+
+    .innerContent {
+      text-align: left;
+      width: 100%;
+      padding-right: 0px;
+    }
+  }
+}
+
+.slantedDivF:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+
 footer {
   position: relative;
   width: 100%;
@@ -276,6 +309,7 @@ footer {
   background-size: auto, cover;
   background-position: center, center;
   margin-top: -10rem;
+  z-index: -3;
 }
 
 .modal {
