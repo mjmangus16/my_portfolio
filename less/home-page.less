@@ -116,7 +116,6 @@
       box-shadow: 2px 2px 10px;
       border-radius: 5px;
       cursor: pointer;
-      transition: 0.3s;
       z-index: 10;
       transition: all 0.3s ease-in-out;
 
@@ -271,7 +270,7 @@
 .slantedDivF {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #3f4e85;
   z-index: 1;
 
@@ -282,6 +281,48 @@
       text-align: left;
       width: 100%;
       padding-right: 0px;
+
+      .heading {
+        border-bottom: @borderBottom;
+        .flexProperties(space-between, row, wrap, center);
+
+        h4 {
+          border-bottom: none;
+        }
+
+        .fillerDiv {
+          @media @mobile {
+            display: none;
+          }
+        }
+      }
+
+      .icons {
+        .flexProperties(space-around, row, wrap, center);
+        .fab {
+          margin: 15px 10px;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          font-size: 5rem;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .heading2 {
+        margin-top: 50px;
+
+        ul {
+          margin: 10px 5px;
+          .flexProperties(space-around, row, wrap, center);
+
+          li {
+            padding: 5px;
+          }
+        }
+      }
     }
   }
 }

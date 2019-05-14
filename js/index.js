@@ -75,3 +75,123 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 };
+
+const skillsContent = document.querySelector("#skillsContent");
+
+const htmlIcon = document.querySelector(".devicon-html5-plain");
+
+htmlIcon.addEventListener("mouseover", () => {
+  htmlIcon.classList.add("colored");
+  skillsContent.textContent = "HTML 5";
+});
+
+htmlIcon.addEventListener("mouseout", () => {
+  htmlIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const cssIcon = document.querySelector(".devicon-css3-plain");
+
+cssIcon.addEventListener("mouseover", () => {
+  cssIcon.classList.add("colored");
+  skillsContent.textContent = "CSS 3";
+});
+
+cssIcon.addEventListener("mouseout", () => {
+  cssIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const jsIcon = document.querySelector(".devicon-javascript-plain");
+
+jsIcon.addEventListener("mouseover", () => {
+  jsIcon.classList.add("colored");
+  skillsContent.textContent = "JAVASCRIPT";
+});
+
+jsIcon.addEventListener("mouseout", () => {
+  jsIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const reactIcon = document.querySelector(".devicon-react-original");
+
+reactIcon.addEventListener("mouseover", () => {
+  reactIcon.classList.add("colored");
+  skillsContent.textContent = "REACT JS";
+});
+
+reactIcon.addEventListener("mouseout", () => {
+  reactIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const mongoIcon = document.querySelector(".devicon-mongodb-plain");
+
+mongoIcon.addEventListener("mouseover", () => {
+  mongoIcon.classList.add("colored");
+  skillsContent.textContent = "MONGO DB";
+});
+
+mongoIcon.addEventListener("mouseout", () => {
+  mongoIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const gitHubIcon = document.querySelector(".devicon-github-plain");
+
+gitHubIcon.addEventListener("mouseover", () => {
+  gitHubIcon.classList.add("colored");
+  skillsContent.textContent = "GITHUB";
+});
+
+gitHubIcon.addEventListener("mouseout", () => {
+  gitHubIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const expressIcon = document.querySelector(".devicon-express-original");
+
+expressIcon.addEventListener("mouseover", () => {
+  expressIcon.classList.add("colored");
+  skillsContent.textContent = "EXPRESS JS";
+});
+
+expressIcon.addEventListener("mouseout", () => {
+  expressIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const nodeIcon = document.querySelector(".devicon-nodejs-plain");
+
+nodeIcon.addEventListener("mouseover", () => {
+  nodeIcon.classList.add("colored");
+  skillsContent.textContent = "NODE JS";
+});
+
+nodeIcon.addEventListener("mouseout", () => {
+  nodeIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const herokuIcon = document.querySelector(".devicon-heroku-plain");
+
+herokuIcon.addEventListener("mouseover", () => {
+  herokuIcon.classList.add("colored");
+  skillsContent.textContent = "HEROKU";
+});
+
+herokuIcon.addEventListener("mouseout", () => {
+  herokuIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
+
+const lessIcon = document.querySelector(".devicon-less-plain-wordmark");
+
+lessIcon.addEventListener("mouseover", () => {
+  skillsContent.textContent = "LESS";
+});
+
+lessIcon.addEventListener("mouseout", () => {
+  skillsContent.textContent = "";
+});

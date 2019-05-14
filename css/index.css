@@ -299,7 +299,6 @@ p {
   box-shadow: 2px 2px 10px;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
   z-index: 10;
   transition: all 0.3s ease-in-out;
 }
@@ -440,7 +439,7 @@ p {
 .slantedDivF {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #3f4e85;
   z-index: 1;
 }
@@ -451,6 +450,52 @@ p {
   text-align: left;
   width: 100%;
   padding-right: 0px;
+}
+.slantedDivF .innerContent-container .innerContent .heading {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slantedDivF .innerContent-container .innerContent .heading h4 {
+  border-bottom: none;
+}
+@media (max-width: 600px) {
+  .slantedDivF .innerContent-container .innerContent .heading .fillerDiv {
+    display: none;
+  }
+}
+.slantedDivF .innerContent-container .innerContent .icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slantedDivF .innerContent-container .innerContent .icons .fab {
+  margin: 15px 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-size: 5rem;
+}
+.slantedDivF .innerContent-container .innerContent .icons .fab:hover {
+  transform: scale(1.2);
+}
+.slantedDivF .innerContent-container .innerContent .heading2 {
+  margin-top: 50px;
+}
+.slantedDivF .innerContent-container .innerContent .heading2 ul {
+  margin: 10px 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slantedDivF .innerContent-container .innerContent .heading2 ul li {
+  padding: 5px;
 }
 .slantedDivF:after {
   position: absolute;
