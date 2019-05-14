@@ -276,6 +276,7 @@
 
   .innerContent-container {
     z-index: 10;
+    padding: 50px 0px;
 
     .innerContent {
       text-align: left;
@@ -304,6 +305,19 @@
           transition: all 0.4s ease-in-out;
           cursor: pointer;
           font-size: 5rem;
+          box-shadow: none;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        img {
+          width: 5rem;
+          margin: 0px;
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          box-shadow: none;
 
           &:hover {
             transform: scale(1.2);

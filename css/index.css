@@ -445,6 +445,7 @@ p {
 }
 .slantedDivF .innerContent-container {
   z-index: 10;
+  padding: 50px 0px;
 }
 .slantedDivF .innerContent-container .innerContent {
   text-align: left;
@@ -479,8 +480,19 @@ p {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   font-size: 5rem;
+  box-shadow: none;
 }
 .slantedDivF .innerContent-container .innerContent .icons .fab:hover {
+  transform: scale(1.2);
+}
+.slantedDivF .innerContent-container .innerContent .icons img {
+  width: 5rem;
+  margin: 0px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: none;
+}
+.slantedDivF .innerContent-container .innerContent .icons img:hover {
   transform: scale(1.2);
 }
 .slantedDivF .innerContent-container .innerContent .heading2 {

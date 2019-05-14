@@ -195,3 +195,27 @@ lessIcon.addEventListener("mouseover", () => {
 lessIcon.addEventListener("mouseout", () => {
   skillsContent.textContent = "";
 });
+
+const muiIcon = document.querySelector(".material-ui-white");
+
+muiIcon.addEventListener("mouseover", () => {
+  skillsContent.textContent = "MATERIAL UI";
+  muiIcon.src = "./img/materialUI-black.png";
+});
+
+muiIcon.addEventListener("mouseout", () => {
+  skillsContent.textContent = "";
+  muiIcon.src = "./img/materialUI.png";
+});
+
+const reduxWhiteIcon = document.querySelector(".redux-white");
+
+reduxWhiteIcon.addEventListener("mouseover", () => {
+  skillsContent.textContent = "REDUX";
+  reduxWhiteIcon.src = "./img/redux-color.png";
+});
+
+reduxWhiteIcon.addEventListener("mouseout", () => {
+  skillsContent.textContent = "";
+  reduxWhiteIcon.src = "./img/redux-white.png";
+});
