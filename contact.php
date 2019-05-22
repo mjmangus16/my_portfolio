@@ -1,23 +1,28 @@
-<?php 
-  $name = $_POST['name'];
-  $visitor_email = $_POST['email'];
-  $message = $_POST['message'];
+<?php
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-  $email_from = 'Portfolio@michaelMangus.com';
 
-  $email_subject = "New Form Submission";
+$email_from = 'mjmangus16@yahoo.com.com';
 
-  $email_body = "User Name: $name.\n". 
-                  "User Email: $visitor_email.\n". 
-                    "User Message: $message.\n";
+$email_subject = "New Form Submission";
 
-  $to = "mjmangus@gmail.com";
+$email_body = "User Name: $name.\n".
+"User Email: $visitor_email.\n".
+"User Message: $message.\n";
 
-  $headers = "From: $email_from \r\n";
 
-  $headers .= "Reply-To: $visitor_email \r\n";
+$to = "mjmangus@gmail.com";
 
-  mail($to,$email_subject,$email_body,$headers);
+$headers = "From: $email_from \r\n";
 
-  header("Location: index.html")
+$headers .= "Reply To: $visitor_email \r\n";
+
+mail($to,$email_subject,$email_body,$headers);
+
+header("Location: Website Name");
+
+
+
 ?>
