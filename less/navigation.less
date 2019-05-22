@@ -1,1 +1,34 @@
 // Navigation code here
+
+.nav-container {
+  position: fixed;
+  z-index: 20;
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  background-color: #2e3141;
+  border-bottom: @borderBottom;
+
+  nav {
+    .flexProperties(space-around, row, wrap, center);
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+
+    a {
+      padding: 15px;
+      color: grey;
+      background-color: #2e3141;
+      cursor: pointer;
+      width: 33.3%;
+      text-decoration: none;
+
+      &:hover {
+        color: #2e3141;
+        background-color: grey;
+        font-weight: 800;
+      }
+    }
+  }
+}

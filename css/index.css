@@ -173,6 +173,39 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.nav-container {
+  position: fixed;
+  z-index: 20;
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  background-color: #2e3141;
+  border-bottom: 1px solid grey;
+}
+.nav-container nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+}
+.nav-container nav a {
+  padding: 15px;
+  color: grey;
+  background-color: #2e3141;
+  cursor: pointer;
+  width: 33.3%;
+  text-decoration: none;
+}
+.nav-container nav a:hover {
+  color: #2e3141;
+  background-color: grey;
+  font-weight: 800;
+}
 .slantedDivA {
   position: relative;
   width: 100%;
@@ -191,15 +224,25 @@ p {
 .slantedDivA div {
   width: 75%;
   margin: auto;
-  color: white;
+  color: #e6e6e6;
   letter-spacing: 2px;
   z-index: 10;
+}
+@media (max-width: 600px) {
+  .slantedDivA div {
+    width: 100%;
+  }
 }
 .slantedDivA div h2 {
   padding: 25px 0px;
   border-bottom: 1px solid grey;
   font-size: 3.5rem;
   font-weight: 600;
+}
+@media (max-width: 600px) {
+  .slantedDivA div h2 {
+    font-size: 2.5rem;
+  }
 }
 .slantedDivA div p {
   padding: 25px 0px;
@@ -258,7 +301,7 @@ p {
   display: inline-block;
   text-align: right;
   padding-right: 75px;
-  color: white;
+  color: #e6e6e6;
   z-index: 10;
   letter-spacing: 2px;
 }
@@ -292,7 +335,7 @@ p {
 .slantedDiv .innerContent-container .innerContent .innerContent-links a {
   padding: 15px 0px;
   text-decoration: none;
-  color: white;
+  color: #e6e6e6;
 }
 .slantedDiv .innerContent-container img {
   width: 30%;
@@ -411,6 +454,11 @@ p {
   width: 300px;
   margin: 3rem auto;
 }
+@media (max-width: 600px) {
+  .slantedDivE .innerContent-container {
+    padding-top: 0px;
+  }
+}
 @media (max-width: 800px) {
   .slantedDivE .innerContent-container img {
     width: 75%;
@@ -447,10 +495,20 @@ p {
   z-index: 10;
   padding: 50px 0px;
 }
+@media (max-width: 600px) {
+  .slantedDivF .innerContent-container {
+    padding-top: 0px;
+  }
+}
 .slantedDivF .innerContent-container .innerContent {
   text-align: left;
   width: 100%;
   padding-right: 0px;
+}
+@media (max-width: 600px) {
+  .slantedDivF .innerContent-container .innerContent {
+    padding-left: 0px;
+  }
 }
 .slantedDivF .innerContent-container .innerContent .heading {
   border-bottom: 1px solid grey;
