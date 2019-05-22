@@ -385,22 +385,56 @@ footer {
   background-size: auto, cover;
   background-position: center, center;
   margin-top: -10rem;
-  z-index: -3;
+  z-index: 0;
   padding: 250px 0px 100px;
 
   .contact-container {
-    width: 75%;
+    width: 50%;
     margin: auto;
 
-    h4 {
+    .contact-title {
       color: @textColor;
-      padding: 10px;
+      text-transform: uppercase;
+
+      h4 {
+        line-height: 10px;
+      }
     }
 
-    .form-container {
-      width: 100%;
-      height: 500px;
-      border: solid white 1px;
+    form {
+      margin: 50px auto auto;
+      transition: all 4s ease-in-out;
+      text-align: center;
+
+      .form-control {
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      input {
+        height: 45px;
+      }
+
+      .submit {
+        background: #ff5722;
+        border-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: #f44336;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
