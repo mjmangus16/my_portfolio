@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Raleway:200,400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+
+    <title>Michael Mangus Portfolio</title>
+    <META
+      name="description"
+      content="A full stack web developer that specializes in the MERN stack with Google's Material Design."
+    />
+    <META
+      name="keywords"
+      content="full stack web developer, React JS, MERN Stack, Website designer, mongodb, express, node js"
+    />
+
+    <link href="/css/index.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <nav>
+        <a href="#skills">Skills</a>
+        <a>Resume</a>
+        <a>Contact</a>
+      </nav>
+    </div>
+
+    <section class="slantedDivA">
+      <div>
+        <h2>MICHAEL MANGUS PORTFOLIO</h2>
+        <p>
+          FULL STACK WEB DEVELOPER -MERN STACK-
+        </p>
+      </div>
+    </section>
+    <section class="slantedDiv slantedDivB">
+      <div class="innerContent-container">
+        <div class="innerContent">
+          <h4>Disc Golf App</h4>
+          <p>
+            This is a web app that allows users to connect with friends, track
+            personal stats, earn achievements and level up a profile all while
+            playing disc golf. This is built with the MERN stack and utilizes
+            both an API and NoSQL database with an extensive CRUD backend.
+          </p>
+          <div class="innerContent-links">
+            <a href="https://www.squalladgapp.com/" target="_blank"
+              >View Site</a
+            >
+            <a href="https://github.com/mjmangus16/squalla_app" target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+        <img id="img_1" src="img/app-dashboard.png" />
+      </div>
+    </section>
+    <section class="slantedDiv slantedDivC">
+      <div class="innerContent-container">
+        <img id="img_2" src="img/course-search.png" />
+        <div class="innerContent">
+          <h4>Course Search Tool</h4>
+          <p>
+            A web app for helping users quickly and easily find disc golf
+            courses. It is built with the MERN stack and utilizes an API to
+            collect the data.
+          </p>
+          <div class="innerContent-links">
+            <a href="https://www.squalladgcoursesearch.com/" target="_blank"
+              >View Site</a
+            >
+            <a
+              href="https://github.com/mjmangus16/squalla_course_search_tool"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slantedDiv slantedDivD">
+      <div class="innerContent-container">
+        <div class="innerContent">
+          <h4>Disc Search Tool</h4>
+          <p>
+            A web app that allows user's to search and filter through disc golf
+            discs based on different criteria. This web app is built with the
+            MERN stack. The data is retrieved from a NoSQL Database.
+          </p>
+          <div class="innerContent-links">
+            <a href="https://www.squalladgdiscsearch.com/" target="_blank"
+              >View Site</a
+            >
+            <a
+              href="https://github.com/mjmangus16/squalla_disc_search_tool"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+        <img id="img_3" src="img/disc-search.png" />
+      </div>
+    </section>
+    <section class="slantedDiv slantedDivE">
+      <div class="innerContent-container">
+        <img id="img_4" src="img/landing1.png" />
+        <img id="img_5" src="img/landing2.png" />
+        <img id="img_6" src="img/landing3.png" />
+        <img
+          id="img_7"
+          class="img-mobile"
+          src="img/mobile/dashboard_menu.png"
+        />
+        <img
+          id="img_8"
+          class="img-mobile"
+          src="img/mobile/squallaLandingMobile.png"
+        />
+        <img
+          id="img_9"
+          class="img-mobile"
+          src="img/mobile/disc_search_filter.png"
+        />
+      </div>
+    </section>
+    <section class="slantedDiv slantedDivF" id="skills">
+      <div class="innerContent-container">
+        <div class="innerContent">
+          <div class="heading">
+            <h4>Skills</h4>
+            <h5 id="skillsContent"></h5>
+            <div class="fillerDiv"></div>
+          </div>
+          <div class="icons">
+            <i class="fab devicon-html5-plain"></i>
+            <i class="fab devicon-css3-plain"></i>
+            <i class="fab devicon-javascript-plain"></i>
+            <i class="fab devicon-less-plain-wordmark"></i>
+            <i class="fab devicon-react-original"></i>
+            <img class="redux-white" src="./img/redux-white.png" />
+            <i class="fab devicon-mongodb-plain"></i>
+            <i class="fab devicon-github-plain"></i>
+            <i class="fab devicon-nodejs-plain"></i>
+            <i class="fab devicon-express-original"></i>
+            <i class="fab devicon-heroku-plain"></i>
+            <img class="material-ui-white" src="./img/materialUI.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact-container">
+        <div class="contact-title">
+          <h4>Contact Michael</h4>
+        </div>
+
+        <div class="contact-form">
+          <form id="contact-form" method="post" action="/contact.php">
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+            <br />
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+            <br />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Message"
+              row="4"
+              required
+            ></textarea>
+            <br />
+            <input
+              type="submit"
+              class="form-control submit"
+              value="SEND MESSAGE"
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="myImg" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
