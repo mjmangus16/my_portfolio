@@ -1,0 +1,5 @@
+module.exports = {
+  SENDGRID_PASSWORD: process.env.SENDGRID_PASSWORD,
+  SENDGRID_USERNAME: process.env.SENDGRID_USERNAME,
+  SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+};

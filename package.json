@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mjmangus16/my_portfolio#readme",
   "dependencies": {
-    "express": "^4.17.0"
+    "express": "^4.17.0",
+    "sendgrid": "^5.2.3"
   }
 }
