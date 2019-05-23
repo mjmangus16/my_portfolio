@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 const sgMail = require("@sendgrid/mail");
+const mailApiKey = require("./config/keys").SENDGRID_API_KEY;
 
 app.use(express.static("public"));
 app.use(express.urlencoded());
@@ -10,17 +11,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit-contact", (req, res) => {
-  sgMail.setApiKey(
-    "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"
-  );
+  sgMail.setApiKey(mailApiKey);
 
   const msg = {
     to: "mjmangus@gmail.com",
     from: "portfolio@gmail.com",
     subject: "Contacting you from your portfolio page",
     html: `Name: ${req.body.name}<br>
-    Email: ${req.body.email}<br>
-    Message: ${req.body.message}`
+    Email: ${req.body.email}<br><br>
+    ${req.body.message}`
   };
   sgMail.send(msg);
 
