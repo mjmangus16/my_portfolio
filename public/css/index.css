@@ -680,3 +680,6 @@ footer .contact-container form .submit:hover {
   width: 80%;
   max-width: 700px;
 }
+#dummyframe {
+  display: none;
+}

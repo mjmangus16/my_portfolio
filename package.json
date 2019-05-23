@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mjmangus16/my_portfolio#readme",
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "async": "^3.0.0",
     "express": "^4.17.0",
     "sendgrid": "^5.2.3"
   }
