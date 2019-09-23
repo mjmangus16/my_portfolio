@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -243,6 +243,10 @@ p {
   .slantedDivA div h2 {
     font-size: 2.5rem;
   }
+}
+.slantedDivA div .bio {
+  font-size: 1.4rem;
+  font-weight: 100;
 }
 .slantedDivA div p {
   padding: 25px 0px;
@@ -445,7 +449,7 @@ p {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #2e3141;
+  background-color: #45558d;
   z-index: 2;
 }
 .slantedDivF .innerContent-container {
@@ -565,6 +569,17 @@ footer .contact-container .contact-title {
 }
 footer .contact-container .contact-title h4 {
   line-height: 10px;
+}
+footer .contact-container .contact-info {
+  color: #f1f1f1;
+  margin: 25px;
+  font-size: 1.5rem;
+}
+footer .contact-container .contact-info ul li {
+  padding: 7px;
+}
+footer .contact-container .contact-info ul li a {
+  color: #f1f1f1;
 }
 footer .contact-container form {
   margin: 50px auto auto;
