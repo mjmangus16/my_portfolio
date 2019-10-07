@@ -138,17 +138,17 @@ mongoIcon.addEventListener("mouseout", () => {
   skillsContent.textContent = "";
 });
 
-const gitHubIcon = document.querySelector(".devicon-github-plain");
+// const gitHubIcon = document.querySelector(".devicon-github-plain");
 
-gitHubIcon.addEventListener("mouseover", () => {
-  gitHubIcon.classList.add("colored");
-  skillsContent.textContent = "GITHUB";
-});
+// gitHubIcon.addEventListener("mouseover", () => {
+//   gitHubIcon.classList.add("colored");
+//   skillsContent.textContent = "GITHUB";
+// });
 
-gitHubIcon.addEventListener("mouseout", () => {
-  gitHubIcon.classList.remove("colored");
-  skillsContent.textContent = "";
-});
+// gitHubIcon.addEventListener("mouseout", () => {
+//   gitHubIcon.classList.remove("colored");
+//   skillsContent.textContent = "";
+// });
 
 const expressIcon = document.querySelector(".devicon-express-original");
 
