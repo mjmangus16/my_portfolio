@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -387,7 +387,7 @@ p {
 .slantedDivC {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 475px;
   background-color: #45558d;
   z-index: 6;
 }
