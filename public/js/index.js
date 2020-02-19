@@ -219,3 +219,15 @@ reduxWhiteIcon.addEventListener("mouseout", () => {
   skillsContent.textContent = "";
   reduxWhiteIcon.src = "./img/redux-white.png";
 });
+
+const pythonIcon = document.querySelector(".devicon-python-plain");
+
+pythonIcon.addEventListener("mouseover", () => {
+  pythonIcon.classList.add("colored");
+  skillsContent.textContent = "PYTHON";
+});
+
+pythonIcon.addEventListener("mouseout", () => {
+  pythonIcon.classList.remove("colored");
+  skillsContent.textContent = "";
+});
